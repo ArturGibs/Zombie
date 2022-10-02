@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+{% extends "base.html" %}
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+{% block page_content %}
+    <h1>Your_name</h1>
+<form action="{%url 'reversed' %}">
+    <textarea cols="50" rows="10" name="username"></textarea>
+    <br><br>
+    <input type="submit" value="Reverse!">
+</form>
+{% endblock %}
+</body>
+</html>
+
